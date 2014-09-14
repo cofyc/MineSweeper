@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB31EB1A19C5977E0066829A /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB31EB1919C5977E0066829A /* GridView.swift */; };
+		FB31EB1C19C598550066829A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB31EB1B19C598550066829A /* Extensions.swift */; };
+		FB31EB2019C59B440066829A /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB31EB1F19C59B440066829A /* GameModel.swift */; };
+		FB31EB2C19C5D7EE0066829A /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB31EB2B19C5D7EE0066829A /* StatusView.swift */; };
+		FB31EB2F19C5E69C0066829A /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = FB31EB2D19C5E69C0066829A /* flag.png */; };
+		FB31EB3019C5E69C0066829A /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = FB31EB2E19C5E69C0066829A /* mine.png */; };
 		FBE9675419C58A8700C8C24C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9675319C58A8700C8C24C /* AppDelegate.swift */; };
 		FBE9675619C58A8700C8C24C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9675519C58A8700C8C24C /* ViewController.swift */; };
 		FBE9675919C58A8700C8C24C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE9675719C58A8700C8C24C /* Main.storyboard */; };
 		FBE9675B19C58A8700C8C24C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE9675A19C58A8700C8C24C /* Images.xcassets */; };
 		FBE9675E19C58A8700C8C24C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE9675C19C58A8700C8C24C /* LaunchScreen.xib */; };
 		FBE9676A19C58A8700C8C24C /* MineSweeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9676919C58A8700C8C24C /* MineSweeperTests.swift */; };
+		FBE9677419C58CF000C8C24C /* GameboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9677319C58CF000C8C24C /* GameboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB31EB1919C5977E0066829A /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		FB31EB1B19C598550066829A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FB31EB1F19C59B440066829A /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		FB31EB2B19C5D7EE0066829A /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		FB31EB2D19C5E69C0066829A /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		FB31EB2E19C5E69C0066829A /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine.png; sourceTree = "<group>"; };
 		FBE9674E19C58A8700C8C24C /* MineSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE9675219C58A8700C8C24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBE9675319C58A8700C8C24C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +49,7 @@
 		FBE9676319C58A8700C8C24C /* MineSweeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MineSweeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE9676819C58A8700C8C24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBE9676919C58A8700C8C24C /* MineSweeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineSweeperTests.swift; sourceTree = "<group>"; };
+		FBE9677319C58CF000C8C24C /* GameboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB31EB3119C5E6A70066829A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB31EB2D19C5E69C0066829A /* flag.png */,
+				FB31EB2E19C5E69C0066829A /* mine.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		FBE9674519C58A8700C8C24C = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +102,15 @@
 			children = (
 				FBE9675319C58A8700C8C24C /* AppDelegate.swift */,
 				FBE9675519C58A8700C8C24C /* ViewController.swift */,
+				FBE9677319C58CF000C8C24C /* GameboardView.swift */,
+				FB31EB1919C5977E0066829A /* GridView.swift */,
+				FB31EB2B19C5D7EE0066829A /* StatusView.swift */,
+				FB31EB1F19C59B440066829A /* GameModel.swift */,
+				FB31EB1B19C598550066829A /* Extensions.swift */,
 				FBE9675719C58A8700C8C24C /* Main.storyboard */,
 				FBE9675A19C58A8700C8C24C /* Images.xcassets */,
 				FBE9675C19C58A8700C8C24C /* LaunchScreen.xib */,
+				FB31EB3119C5E6A70066829A /* Resources */,
 				FBE9675119C58A8700C8C24C /* Supporting Files */,
 			);
 			path = MineSweeper;
@@ -193,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE9675919C58A8700C8C24C /* Main.storyboard in Resources */,
+				FB31EB3019C5E69C0066829A /* mine.png in Resources */,
+				FB31EB2F19C5E69C0066829A /* flag.png in Resources */,
 				FBE9675E19C58A8700C8C24C /* LaunchScreen.xib in Resources */,
 				FBE9675B19C58A8700C8C24C /* Images.xcassets in Resources */,
 			);
@@ -212,8 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB31EB1C19C598550066829A /* Extensions.swift in Sources */,
+				FBE9677419C58CF000C8C24C /* GameboardView.swift in Sources */,
 				FBE9675619C58A8700C8C24C /* ViewController.swift in Sources */,
+				FB31EB1A19C5977E0066829A /* GridView.swift in Sources */,
+				FB31EB2C19C5D7EE0066829A /* StatusView.swift in Sources */,
 				FBE9675419C58A8700C8C24C /* AppDelegate.swift in Sources */,
+				FB31EB2019C59B440066829A /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +441,7 @@
 				FBE9676F19C58A8700C8C24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBE9677019C58A8700C8C24C /* Build configuration list for PBXNativeTarget "MineSweeperTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +450,7 @@
 				FBE9677219C58A8700C8C24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
