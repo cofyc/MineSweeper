@@ -7,50 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBFF0F7019C4B33400A63CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF0F6F19C4B33400A63CC0 /* AppDelegate.swift */; };
-		FBFF0F7219C4B33400A63CC0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBFF0F7119C4B33400A63CC0 /* GameScene.sks */; };
-		FBFF0F7419C4B33400A63CC0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF0F7319C4B33400A63CC0 /* GameScene.swift */; };
-		FBFF0F7619C4B33400A63CC0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF0F7519C4B33400A63CC0 /* GameViewController.swift */; };
-		FBFF0F7919C4B33400A63CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFF0F7719C4B33400A63CC0 /* Main.storyboard */; };
-		FBFF0F7B19C4B33400A63CC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBFF0F7A19C4B33400A63CC0 /* Images.xcassets */; };
-		FBFF0F7E19C4B33400A63CC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFF0F7C19C4B33400A63CC0 /* LaunchScreen.xib */; };
-		FBFF0F8A19C4B33500A63CC0 /* MineSweeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF0F8919C4B33500A63CC0 /* MineSweeperTests.swift */; };
+		FBE9675419C58A8700C8C24C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9675319C58A8700C8C24C /* AppDelegate.swift */; };
+		FBE9675619C58A8700C8C24C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9675519C58A8700C8C24C /* ViewController.swift */; };
+		FBE9675919C58A8700C8C24C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE9675719C58A8700C8C24C /* Main.storyboard */; };
+		FBE9675B19C58A8700C8C24C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE9675A19C58A8700C8C24C /* Images.xcassets */; };
+		FBE9675E19C58A8700C8C24C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE9675C19C58A8700C8C24C /* LaunchScreen.xib */; };
+		FBE9676A19C58A8700C8C24C /* MineSweeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE9676919C58A8700C8C24C /* MineSweeperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FBFF0F8419C4B33400A63CC0 /* PBXContainerItemProxy */ = {
+		FBE9676419C58A8700C8C24C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FBFF0F6219C4B33400A63CC0 /* Project object */;
+			containerPortal = FBE9674619C58A8700C8C24C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FBFF0F6919C4B33400A63CC0;
+			remoteGlobalIDString = FBE9674D19C58A8700C8C24C;
 			remoteInfo = MineSweeper;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FBFF0F6A19C4B33400A63CC0 /* MineSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBFF0F6E19C4B33400A63CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBFF0F6F19C4B33400A63CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBFF0F7119C4B33400A63CC0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		FBFF0F7319C4B33400A63CC0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		FBFF0F7519C4B33400A63CC0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		FBFF0F7819C4B33400A63CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FBFF0F7A19C4B33400A63CC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FBFF0F7D19C4B33400A63CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FBFF0F8319C4B33400A63CC0 /* MineSweeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MineSweeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBFF0F8819C4B33500A63CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBFF0F8919C4B33500A63CC0 /* MineSweeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineSweeperTests.swift; sourceTree = "<group>"; };
+		FBE9674E19C58A8700C8C24C /* MineSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE9675219C58A8700C8C24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE9675319C58A8700C8C24C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBE9675519C58A8700C8C24C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBE9675819C58A8700C8C24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBE9675A19C58A8700C8C24C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBE9675D19C58A8700C8C24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FBE9676319C58A8700C8C24C /* MineSweeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MineSweeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE9676819C58A8700C8C24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE9676919C58A8700C8C24C /* MineSweeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineSweeperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FBFF0F6719C4B33400A63CC0 /* Frameworks */ = {
+		FBE9674B19C58A8700C8C24C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBFF0F8019C4B33400A63CC0 /* Frameworks */ = {
+		FBE9676019C58A8700C8C24C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,60 +56,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FBFF0F6119C4B33400A63CC0 = {
+		FBE9674519C58A8700C8C24C = {
 			isa = PBXGroup;
 			children = (
-				FBFF0F6C19C4B33400A63CC0 /* MineSweeper */,
-				FBFF0F8619C4B33400A63CC0 /* MineSweeperTests */,
-				FBFF0F6B19C4B33400A63CC0 /* Products */,
+				FBE9675019C58A8700C8C24C /* MineSweeper */,
+				FBE9676619C58A8700C8C24C /* MineSweeperTests */,
+				FBE9674F19C58A8700C8C24C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FBFF0F6B19C4B33400A63CC0 /* Products */ = {
+		FBE9674F19C58A8700C8C24C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBFF0F6A19C4B33400A63CC0 /* MineSweeper.app */,
-				FBFF0F8319C4B33400A63CC0 /* MineSweeperTests.xctest */,
+				FBE9674E19C58A8700C8C24C /* MineSweeper.app */,
+				FBE9676319C58A8700C8C24C /* MineSweeperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBFF0F6C19C4B33400A63CC0 /* MineSweeper */ = {
+		FBE9675019C58A8700C8C24C /* MineSweeper */ = {
 			isa = PBXGroup;
 			children = (
-				FBFF0F6F19C4B33400A63CC0 /* AppDelegate.swift */,
-				FBFF0F7119C4B33400A63CC0 /* GameScene.sks */,
-				FBFF0F7319C4B33400A63CC0 /* GameScene.swift */,
-				FBFF0F7519C4B33400A63CC0 /* GameViewController.swift */,
-				FBFF0F7719C4B33400A63CC0 /* Main.storyboard */,
-				FBFF0F7A19C4B33400A63CC0 /* Images.xcassets */,
-				FBFF0F7C19C4B33400A63CC0 /* LaunchScreen.xib */,
-				FBFF0F6D19C4B33400A63CC0 /* Supporting Files */,
+				FBE9675319C58A8700C8C24C /* AppDelegate.swift */,
+				FBE9675519C58A8700C8C24C /* ViewController.swift */,
+				FBE9675719C58A8700C8C24C /* Main.storyboard */,
+				FBE9675A19C58A8700C8C24C /* Images.xcassets */,
+				FBE9675C19C58A8700C8C24C /* LaunchScreen.xib */,
+				FBE9675119C58A8700C8C24C /* Supporting Files */,
 			);
 			path = MineSweeper;
 			sourceTree = "<group>";
 		};
-		FBFF0F6D19C4B33400A63CC0 /* Supporting Files */ = {
+		FBE9675119C58A8700C8C24C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FBFF0F6E19C4B33400A63CC0 /* Info.plist */,
+				FBE9675219C58A8700C8C24C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FBFF0F8619C4B33400A63CC0 /* MineSweeperTests */ = {
+		FBE9676619C58A8700C8C24C /* MineSweeperTests */ = {
 			isa = PBXGroup;
 			children = (
-				FBFF0F8919C4B33500A63CC0 /* MineSweeperTests.swift */,
-				FBFF0F8719C4B33500A63CC0 /* Supporting Files */,
+				FBE9676919C58A8700C8C24C /* MineSweeperTests.swift */,
+				FBE9676719C58A8700C8C24C /* Supporting Files */,
 			);
 			path = MineSweeperTests;
 			sourceTree = "<group>";
 		};
-		FBFF0F8719C4B33500A63CC0 /* Supporting Files */ = {
+		FBE9676719C58A8700C8C24C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FBFF0F8819C4B33500A63CC0 /* Info.plist */,
+				FBE9676819C58A8700C8C24C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -121,13 +115,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FBFF0F6919C4B33400A63CC0 /* MineSweeper */ = {
+		FBE9674D19C58A8700C8C24C /* MineSweeper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBFF0F8D19C4B33500A63CC0 /* Build configuration list for PBXNativeTarget "MineSweeper" */;
+			buildConfigurationList = FBE9676D19C58A8700C8C24C /* Build configuration list for PBXNativeTarget "MineSweeper" */;
 			buildPhases = (
-				FBFF0F6619C4B33400A63CC0 /* Sources */,
-				FBFF0F6719C4B33400A63CC0 /* Frameworks */,
-				FBFF0F6819C4B33400A63CC0 /* Resources */,
+				FBE9674A19C58A8700C8C24C /* Sources */,
+				FBE9674B19C58A8700C8C24C /* Frameworks */,
+				FBE9674C19C58A8700C8C24C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -135,46 +129,46 @@
 			);
 			name = MineSweeper;
 			productName = MineSweeper;
-			productReference = FBFF0F6A19C4B33400A63CC0 /* MineSweeper.app */;
+			productReference = FBE9674E19C58A8700C8C24C /* MineSweeper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FBFF0F8219C4B33400A63CC0 /* MineSweeperTests */ = {
+		FBE9676219C58A8700C8C24C /* MineSweeperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBFF0F9019C4B33500A63CC0 /* Build configuration list for PBXNativeTarget "MineSweeperTests" */;
+			buildConfigurationList = FBE9677019C58A8700C8C24C /* Build configuration list for PBXNativeTarget "MineSweeperTests" */;
 			buildPhases = (
-				FBFF0F7F19C4B33400A63CC0 /* Sources */,
-				FBFF0F8019C4B33400A63CC0 /* Frameworks */,
-				FBFF0F8119C4B33400A63CC0 /* Resources */,
+				FBE9675F19C58A8700C8C24C /* Sources */,
+				FBE9676019C58A8700C8C24C /* Frameworks */,
+				FBE9676119C58A8700C8C24C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FBFF0F8519C4B33400A63CC0 /* PBXTargetDependency */,
+				FBE9676519C58A8700C8C24C /* PBXTargetDependency */,
 			);
 			name = MineSweeperTests;
 			productName = MineSweeperTests;
-			productReference = FBFF0F8319C4B33400A63CC0 /* MineSweeperTests.xctest */;
+			productReference = FBE9676319C58A8700C8C24C /* MineSweeperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FBFF0F6219C4B33400A63CC0 /* Project object */ = {
+		FBE9674619C58A8700C8C24C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Cofyc;
 				TargetAttributes = {
-					FBFF0F6919C4B33400A63CC0 = {
+					FBE9674D19C58A8700C8C24C = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					FBFF0F8219C4B33400A63CC0 = {
+					FBE9676219C58A8700C8C24C = {
 						CreatedOnToolsVersion = 6.0;
-						TestTargetID = FBFF0F6919C4B33400A63CC0;
+						TestTargetID = FBE9674D19C58A8700C8C24C;
 					};
 				};
 			};
-			buildConfigurationList = FBFF0F6519C4B33400A63CC0 /* Build configuration list for PBXProject "MineSweeper" */;
+			buildConfigurationList = FBE9674919C58A8700C8C24C /* Build configuration list for PBXProject "MineSweeper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -182,30 +176,29 @@
 				en,
 				Base,
 			);
-			mainGroup = FBFF0F6119C4B33400A63CC0;
-			productRefGroup = FBFF0F6B19C4B33400A63CC0 /* Products */;
+			mainGroup = FBE9674519C58A8700C8C24C;
+			productRefGroup = FBE9674F19C58A8700C8C24C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBFF0F6919C4B33400A63CC0 /* MineSweeper */,
-				FBFF0F8219C4B33400A63CC0 /* MineSweeperTests */,
+				FBE9674D19C58A8700C8C24C /* MineSweeper */,
+				FBE9676219C58A8700C8C24C /* MineSweeperTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FBFF0F6819C4B33400A63CC0 /* Resources */ = {
+		FBE9674C19C58A8700C8C24C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFF0F7E19C4B33400A63CC0 /* LaunchScreen.xib in Resources */,
-				FBFF0F7B19C4B33400A63CC0 /* Images.xcassets in Resources */,
-				FBFF0F7219C4B33400A63CC0 /* GameScene.sks in Resources */,
-				FBFF0F7919C4B33400A63CC0 /* Main.storyboard in Resources */,
+				FBE9675919C58A8700C8C24C /* Main.storyboard in Resources */,
+				FBE9675E19C58A8700C8C24C /* LaunchScreen.xib in Resources */,
+				FBE9675B19C58A8700C8C24C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBFF0F8119C4B33400A63CC0 /* Resources */ = {
+		FBE9676119C58A8700C8C24C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,47 +208,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FBFF0F6619C4B33400A63CC0 /* Sources */ = {
+		FBE9674A19C58A8700C8C24C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFF0F7419C4B33400A63CC0 /* GameScene.swift in Sources */,
-				FBFF0F7619C4B33400A63CC0 /* GameViewController.swift in Sources */,
-				FBFF0F7019C4B33400A63CC0 /* AppDelegate.swift in Sources */,
+				FBE9675619C58A8700C8C24C /* ViewController.swift in Sources */,
+				FBE9675419C58A8700C8C24C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBFF0F7F19C4B33400A63CC0 /* Sources */ = {
+		FBE9675F19C58A8700C8C24C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFF0F8A19C4B33500A63CC0 /* MineSweeperTests.swift in Sources */,
+				FBE9676A19C58A8700C8C24C /* MineSweeperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FBFF0F8519C4B33400A63CC0 /* PBXTargetDependency */ = {
+		FBE9676519C58A8700C8C24C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FBFF0F6919C4B33400A63CC0 /* MineSweeper */;
-			targetProxy = FBFF0F8419C4B33400A63CC0 /* PBXContainerItemProxy */;
+			target = FBE9674D19C58A8700C8C24C /* MineSweeper */;
+			targetProxy = FBE9676419C58A8700C8C24C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FBFF0F7719C4B33400A63CC0 /* Main.storyboard */ = {
+		FBE9675719C58A8700C8C24C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBFF0F7819C4B33400A63CC0 /* Base */,
+				FBE9675819C58A8700C8C24C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FBFF0F7C19C4B33400A63CC0 /* LaunchScreen.xib */ = {
+		FBE9675C19C58A8700C8C24C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBFF0F7D19C4B33400A63CC0 /* Base */,
+				FBE9675D19C58A8700C8C24C /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +255,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FBFF0F8B19C4B33500A63CC0 /* Debug */ = {
+		FBE9676B19C58A8700C8C24C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -305,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		FBFF0F8C19C4B33500A63CC0 /* Release */ = {
+		FBE9676C19C58A8700C8C24C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -340,7 +332,7 @@
 			};
 			name = Release;
 		};
-		FBFF0F8E19C4B33500A63CC0 /* Debug */ = {
+		FBE9676E19C58A8700C8C24C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -350,7 +342,7 @@
 			};
 			name = Debug;
 		};
-		FBFF0F8F19C4B33500A63CC0 /* Release */ = {
+		FBE9676F19C58A8700C8C24C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -360,7 +352,7 @@
 			};
 			name = Release;
 		};
-		FBFF0F9119C4B33500A63CC0 /* Debug */ = {
+		FBE9677119C58A8700C8C24C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -379,7 +371,7 @@
 			};
 			name = Debug;
 		};
-		FBFF0F9219C4B33500A63CC0 /* Release */ = {
+		FBE9677219C58A8700C8C24C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -397,32 +389,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FBFF0F6519C4B33400A63CC0 /* Build configuration list for PBXProject "MineSweeper" */ = {
+		FBE9674919C58A8700C8C24C /* Build configuration list for PBXProject "MineSweeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBFF0F8B19C4B33500A63CC0 /* Debug */,
-				FBFF0F8C19C4B33500A63CC0 /* Release */,
+				FBE9676B19C58A8700C8C24C /* Debug */,
+				FBE9676C19C58A8700C8C24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBFF0F8D19C4B33500A63CC0 /* Build configuration list for PBXNativeTarget "MineSweeper" */ = {
+		FBE9676D19C58A8700C8C24C /* Build configuration list for PBXNativeTarget "MineSweeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBFF0F8E19C4B33500A63CC0 /* Debug */,
-				FBFF0F8F19C4B33500A63CC0 /* Release */,
+				FBE9676E19C58A8700C8C24C /* Debug */,
+				FBE9676F19C58A8700C8C24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		FBFF0F9019C4B33500A63CC0 /* Build configuration list for PBXNativeTarget "MineSweeperTests" */ = {
+		FBE9677019C58A8700C8C24C /* Build configuration list for PBXNativeTarget "MineSweeperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBFF0F9119C4B33500A63CC0 /* Debug */,
-				FBFF0F9219C4B33500A63CC0 /* Release */,
+				FBE9677119C58A8700C8C24C /* Debug */,
+				FBE9677219C58A8700C8C24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FBFF0F6219C4B33400A63CC0 /* Project object */;
+	rootObject = FBE9674619C58A8700C8C24C /* Project object */;
 }
