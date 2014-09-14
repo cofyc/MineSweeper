@@ -10,8 +10,8 @@ import UIKit
 
 /// An enum representing either an mine grid or a number.
 enum GridObject {
-    case Mine
-    case Value(Int)
+    case Mine(Bool) // flag or not
+    case Value(Int) // number of neighbor mines
     case Revealed
     case Empty
 }
@@ -87,16 +87,16 @@ class GameModel: NSObject {
         for i in 0..<8 {
             let idx = Int(arc4random_uniform(UInt32(slots.count - 1)))
             let (x, y) = slots[idx]
-            self.insertGrid((x, y), value: .Mine)
+            self.insertGrid((x, y), value: .Mine(false))
         }
         // remain
         let emptySlots = self.emptySlots()
         for (x, y) in emptySlots {
-            self.insertGrid((x, y), value: .Value(numberOfAroundMines((x, y))))
+            self.insertGrid((x, y), value: .Value(numberOfAroundMines((x, y), flaggedOnly: false)))
         }
     }
 
-    func numberOfAroundMines(pos: (Int, Int)) -> Int {
+    func numberOfAroundMines(pos: (Int, Int), flaggedOnly: Bool) -> Int {
         let (x, y) = pos
         var number:Int = 0
         for i in x-1...x+1 {
@@ -111,8 +111,14 @@ class GameModel: NSObject {
                     continue
                 }
                 switch gameboard[i, j] {
-                case .Mine:
-                    number++
+                case .Mine(let flagged):
+                    if flaggedOnly {
+                        if flagged {
+                            number++
+                        }
+                    } else {
+                        number++
+                    }
                 default:
                     break
                 }
@@ -151,6 +157,42 @@ class GameModel: NSObject {
         return buffer
     }
 
+    func flagGrid(pos: (Int, Int)) {
+        let (x, y) = pos
+        switch gameboard[x, y] {
+        case .Mine:
+            gameboard[x, y] = .Mine(true)
+        default:
+            break;
+        }
+    }
+
+    func doubleClickGrid(pos: (Int, Int)) {
+        let (x, y) = pos
+        if numberOfAroundMines(pos, flaggedOnly: false) == numberOfAroundMines(pos, flaggedOnly: true) {
+            for i in x-1...x+1 {
+                for j in y-1...y+1 {
+                    if i == x && j == y {
+                        continue
+                    }
+                    if (i < 0 || i >= dimension) {
+                        continue
+                    }
+                    if (j < 0 || j >= dimension) {
+                        continue
+                    }
+                    switch gameboard[i,j] {
+                    case .Value, .Empty:
+                        gameboard[i, j] = .Revealed
+                        delegate.notifyRevealGrid((i, j))
+                        break;
+                    default:
+                        continue
+                    }
+                }
+            }
+        }
+    }
 
     func revealGrid(pos: (Int, Int)) -> Bool {
         let (x, y) = pos

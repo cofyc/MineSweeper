@@ -10,6 +10,8 @@ import UIKit
 
 protocol GameboardDelegate: class {
     func revealGrid(pos: (Int, Int))
+    func doubleClickGrid(pos: (Int, Int))
+    func flagGrid(pos: (Int, Int))
 }
 
 /**
@@ -77,7 +79,11 @@ class GameboardView: UIView, UIGestureRecognizerDelegate {
         let x = gridPadding + CGFloat(col)*(gridWidth + gridPadding)
         let y = gridPadding + CGFloat(row)*(gridWidth + gridPadding)
         let grid = GridView(frame: CGRectMake(x, y, gridWidth, gridWidth), pos: pos, value: value)
+        // tap once
         grid.addTarget(self, action: "tap:", forControlEvents: UIControlEvents.TouchUpInside)
+        // tap twice
+        grid.addTarget(self, action: "taptwice:withEvent:", forControlEvents: UIControlEvents.TouchDownRepeat)
+        // tap and hold
         var longPressGesture = UILongPressGestureRecognizer(target: self, action: "handleLongPressGesture:")
         longPressGesture.delegate = self
         longPressGesture.minimumPressDuration = 0.2
@@ -103,6 +109,15 @@ class GameboardView: UIView, UIGestureRecognizerDelegate {
         self.delegate?.revealGrid((sender.x, sender.y))
     }
 
+    func taptwice(sender: GridView!, withEvent event: UIEvent) {
+        var touch:UITouch = event.allTouches()?.anyObject() as UITouch
+        if (touch.tapCount == 2) {
+            println("taptwice")
+            tap(sender)
+            self.delegate?.doubleClickGrid((sender.x, sender.y))
+        }
+    }
+
     // tap and hold a grid
     func handleLongPressGesture(recognizer: UILongPressGestureRecognizer) {
         if (recognizer.state == UIGestureRecognizerState.Ended) {
@@ -117,5 +132,6 @@ class GameboardView: UIView, UIGestureRecognizerDelegate {
             println("flagged: no")
         }
         sender.update()
+        self.delegate?.flagGrid((sender.x, sender.y))
     }
 }

@@ -68,6 +68,18 @@ class ViewController: UIViewController, GameModelDelegate, GameboardDelegate, UI
         }
     }
 
+    func doubleClickGrid(pos: (Int, Int)) {
+        let (x, y) = pos
+        println("double click grid: %d, %d".format(x, y))
+        model!.doubleClickGrid(pos)
+    }
+
+    func flagGrid(pos: (Int, Int)) {
+        let (x, y) = pos
+        println("flag grid: %d, %d".format(x, y))
+        model!.flagGrid(pos)
+    }
+
     func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         self.gameboard?.reset()
         self.model?.reset()
