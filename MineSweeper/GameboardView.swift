@@ -80,7 +80,7 @@ class GameboardView: UIView, UIGestureRecognizerDelegate {
         grid.addTarget(self, action: "tap:", forControlEvents: UIControlEvents.TouchUpInside)
         var longPressGesture = UILongPressGestureRecognizer(target: self, action: "handleLongPressGesture:")
         longPressGesture.delegate = self
-        longPressGesture.minimumPressDuration = 0.5
+        longPressGesture.minimumPressDuration = 0.2
         grid.addGestureRecognizer(longPressGesture)
         addSubview(grid)
         bringSubviewToFront(grid)

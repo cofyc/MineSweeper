@@ -59,6 +59,11 @@ class GridView: UIButton {
             }
             return
         }
+        // clear flag
+        if flagImageView != nil {
+            flagImageView?.removeFromSuperview()
+            flagImageView = nil
+        }
         if value < 0 {
             // has mine
             self.backgroundColor = UIColor.redColor()

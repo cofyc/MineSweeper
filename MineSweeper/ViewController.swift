@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, GameModelDelegate, GameboardDelegate {
+class ViewController: UIViewController, GameModelDelegate, GameboardDelegate, UIAlertViewDelegate {
 
     var gameboard:GameboardView?
     var status:StatusView?
@@ -51,23 +51,26 @@ class ViewController: UIViewController, GameModelDelegate, GameboardDelegate {
         let (x, y) = pos
         println("reveal grid: %d, %d".format(x, y))
         if model!.revealGrid(pos) {
-            var refreshAlert = UIAlertController(title: "Game Over!", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
-                self.gameboard?.reset()
-                self.model?.reset()
-            }))
-            presentViewController(refreshAlert, animated: true, completion: nil)
+            var alert = UIAlertView(title: "Game Over!", message: nil, delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+//            iOS 8 only
+//            var refreshAlert = UIAlertController(title: "You Win!", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+//            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
+//                self.gameboard?.reset()
+//                self.model?.reset()
+//            }))
+//            presentViewController(refreshAlert, animated: true, completion: nil)
         } else {
             if model!.finished() {
-                var refreshAlert = UIAlertController(title: "You Win!", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-                refreshAlert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in
-                    self.gameboard?.reset()
-                    self.model?.reset()
-                }))
-                presentViewController(refreshAlert, animated: true, completion: nil)
+                var alert = UIAlertView(title: "You Win!", message: nil, delegate: self, cancelButtonTitle: "OK")
+                alert.show()
             }
         }
     }
 
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        self.gameboard?.reset()
+        self.model?.reset()
+    }
 }
 
