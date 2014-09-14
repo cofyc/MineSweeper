@@ -3,8 +3,8 @@
 ## How to play
 
 - Tap a grid to clear it.
-- Tap and hold to flagging.
-- Double tap a grid to clear the rest. (If mines are all flagged.)
+- Tap and hold to flag a mine.
+- Double tap a grid to clear the rest. (If neighboring mines are all flagged.)
 
 ## References
 
