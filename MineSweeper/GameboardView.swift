@@ -25,10 +25,9 @@ class GameboardView: UIView, UIGestureRecognizerDelegate {
     var gridPadding: CGFloat = 2.0
     var gridWidth: CGFloat = 24.0
     var cornerRadius: CGFloat = 2.0
+
     var bgColor: UIColor = UIColor.whiteColor()
     var gridColor: UIColor = UIColor.grayColor()
-
-    var gridPopStartScale: CGFloat = 0.1
 
     var grids: Dictionary<NSIndexPath, GridView> = Dictionary()
     var delegate: GameboardDelegate?
