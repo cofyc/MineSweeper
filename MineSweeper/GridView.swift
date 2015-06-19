@@ -24,8 +24,8 @@ class GridView: UIButton {
 
     var numberLabel: UILabel?
 
-    var mineImage:UIImage = UIImage(named: "mine")
-    var flagImage:UIImage = UIImage(named: "flag")
+    var mineImage:UIImage = UIImage(named: "mine")!
+    var flagImage:UIImage = UIImage(named: "flag")!
     var flagImageView:UIImageView?
 
     required init(coder: NSCoder) {

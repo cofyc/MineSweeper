@@ -109,7 +109,7 @@ class GameboardView: UIView, UIGestureRecognizerDelegate {
     }
 
     func taptwice(sender: GridView!, withEvent event: UIEvent) {
-        var touch:UITouch = event.allTouches()?.anyObject() as UITouch
+        var touch:UITouch = event.allTouches()?.first as! UITouch
         if (touch.tapCount == 2) {
             println("taptwice")
             tap(sender)
@@ -122,7 +122,7 @@ class GameboardView: UIView, UIGestureRecognizerDelegate {
         if (recognizer.state == UIGestureRecognizerState.Ended) {
             return
         }
-        let sender = recognizer.view? as GridView
+        let sender = recognizer.view as! GridView
         println("tapAndHold")
         sender.flagged = !sender.flagged
         if (sender.flagged) {

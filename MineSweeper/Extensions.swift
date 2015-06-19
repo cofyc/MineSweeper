@@ -10,12 +10,12 @@ import CoreGraphics
 
 // Add format function for String type.
 func StringWithFormat(format: String, args: CVarArgType...) -> String {
-    return NSString(format: format, arguments: getVaList(args))
+    return NSString(format: format, arguments: getVaList(args)) as String
 }
 
 extension String {
     func format(args: CVarArgType...) -> String {
-        return NSString(format: self, arguments: getVaList(args))
+        return NSString(format: self, arguments: getVaList(args)) as String
     }
 }
 
